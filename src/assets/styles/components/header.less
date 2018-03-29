@@ -1,0 +1,103 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  margin-bottom: 50px;
+  .sm-block({
+    align-items: flex-start;
+  });
+  .xs-block({
+    margin-bottom: 25px;
+  });
+  .logotype {
+    a {
+      color: @main-logo-color;
+      font-family: @font-family-extrabold, sans-serif;
+      font-size: 1.25em;
+      font-weight: 400;
+      line-height: 40px;
+    }
+  }
+
+  .navigation-bar {
+    display: flex;
+    align-items: center;
+      .sm-block({
+        flex-direction: column-reverse;
+      });
+    ul.navigation {
+      .sm-block({
+        display: none;
+      });
+      li.nav-element {
+        float: left;
+        .sm-block({ float: none; });
+        a {
+          display: block;
+          position: relative;
+          padding: 10px 15px;
+          color: @menu-link-color;
+          font-family: @font-family-regular, sans-serif;
+          font-size: 0.9375em;
+          font-weight: 400;
+
+          &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: transparent;
+            content: '\2022';
+            text-shadow: 0 0 transparent;
+            font-size: 2em;
+            .transition();
+            transform: translateX(-50%);
+            pointer-events: none;
+          }
+
+          &:hover::before {
+            color: @hover-link-state;
+            text-shadow: 15px 0 @hover-link-state, -15px 0 @hover-link-state;
+            .transition();
+          }
+        }
+      }
+    }
+    div.menu-bar {
+      ul.menu {
+        li.menu-item {
+          float: left;
+          a {
+            display: block;
+            padding: 10px 22px;
+            margin: 0 30px 0 15px;
+            color: @menu-btn-color;
+            background-color: @menu-btn-bg-color;
+            box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
+            border-radius: 6px;
+            font-family: @font-family-bold, sans-serif;
+            font-size: 0.875em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+
+            &:hover {
+              box-shadow: 0 1px 3px rgba(32, 33, 39, 0.12);
+              background-color: @hover-link-state;
+            }
+          }
+        }
+        li.menu-icon {
+          visibility: hidden;
+          line-height: 40px;
+          fill: @menu-link-color;
+
+          .sm-block({
+            visibility: visible;
+          });
+        }
+      }
+    }
+  }
+}
+

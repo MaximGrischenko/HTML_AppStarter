@@ -1,0 +1,168 @@
+#customers-review {
+  .row-flex();
+  .about-review-container {
+    .col-padding();
+    .size(4);
+    .size-sm(12);
+    background-color: #fff;
+    border-top: 1px solid #e7e8ea;
+    border-bottom: 1px solid #e7e8ea;
+    box-shadow: inset -1px 0 0 #e7e8ea;
+
+    .about-review {
+      img {
+        margin-top: 144px;
+        margin-bottom: 64px;
+
+        .sm-block({
+          margin-top: 80px;
+        });
+      }
+      h2 {
+        font-family: @font-family-ligth, sans-serif;
+        color: #282b31;
+        font-size: 2.18em;
+        font-weight: 300;
+        letter-spacing: 0.88px;
+        margin-bottom: 243px;
+
+        .sm-block({
+          margin-bottom: 120px;
+        });
+        span {
+          font-family: @font-family-extrabold, sans-serif;
+          letter-spacing: 0.88px;
+          display: block;
+        }
+      }
+      p {
+        color: #999ea8;
+        font-family: @font-family-regular, sans-serif;
+        font-size: .93em;
+        font-weight: 700;
+        letter-spacing: 0.33px;
+        margin-bottom: 39px;
+      }
+      a {
+        display: block;
+        color: #282b31;
+        font-family: @font-family-extrabold, sans-serif;
+        font-size: .93em;
+        font-weight: 400;
+        letter-spacing: 0.65px;
+        margin-bottom: 14px;
+        svg {
+          fill: #d3d5d9;
+          margin-right: 14px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .customers-review-container {
+    .col-padding();
+    .size(8);
+    .size-sm(12);
+    background-color: #f8f9fa;
+    border-top: 1px solid #e7e8ea;
+    border-bottom: 1px solid #e7e8ea;
+    box-shadow: inset 1px 0 0 #e7e8ea;
+
+    .review-items {
+      display: flex;
+      flex-direction: column;
+      padding: 120px 0;
+      .sm-block({
+        padding: 60px 0;
+      });
+      .review {
+        .col-padding();
+        .size(9);
+        .size-sm(12);
+        box-shadow: 0 6px 12px rgba(32, 33, 39, 0.08);
+        background-color: #ffffff;
+        padding: 27px 30px 27px 30px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        align-self: center;
+
+        .text {
+          display: flex;
+          align-items: center;
+          .xs-block({
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          });
+          img {
+            margin-right: 30px;
+            margin-bottom: 0;
+            align-self: center;
+            margin-top: -3px;
+            .xs-block({
+              margin-right: 0;
+              text-align: center;
+              margin-bottom: 20px;
+            });
+          }
+          p {
+            margin-right: 42px;
+            color: #282b31;
+            font-family: @font-family-italic, sans-serif;
+            font-size: .87em;
+            margin-bottom: 0;
+            line-height: 25px;
+            .xs-block({
+              margin-right: 0;
+              text-align: center;
+            });
+          }
+        }
+        hr {
+          background-color: #e7e8ea;
+          margin-top: 29px;
+          margin-bottom: 20px;
+          .xs(width, 100%);
+        }
+        .name {
+          display: flex;
+          justify-content: space-between;
+          .xs-block({
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          });
+          p {
+            font-size: .75em;
+            font-weight: 400;
+            line-height: 25px;
+            font-family: @font-family-regular;
+            color: #999ea8;
+            .xs(margin-bottom, 20px);
+            span {
+              font-family: @font-family-bold;
+              line-height: 25px;
+              font-weight: 700;
+            }
+          }
+          a {
+            align-content: flex-end;
+            svg {
+              fill: #d3d5d9;
+              .xs(margin-right, 0);
+            }
+          }
+        }
+
+        &--right {
+          align-self: flex-end;
+
+          .sm-block({align-self: center});
+        }
+      }
+    }
+  }
+}

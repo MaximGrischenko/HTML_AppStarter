@@ -1,0 +1,94 @@
+#intro-section {
+  .row-flex();
+  aside.intro-item {
+    .col();
+    .size(6);
+    .size-sm(12);
+    .intro-content {
+      .sm-block({
+        display: flex;
+      });
+      img {
+        position: relative;
+        width: 108px;
+        height: 108px;
+        top: -3px;
+        left: -9px;
+        margin: 90px 0 26px 0;
+
+        .sm-block({
+          margin-top: 0;
+        });
+      }
+
+      h1 {
+        color: @intro-text-color;
+        font-family: @font-family-ligth, sans-serif;
+        font-size: 35px;
+        font-weight: 300;
+        letter-spacing: 0.88px;
+
+        .xs-block({
+          margin-bottom: 15px;
+        });
+
+        span {
+          font-family: @font-family-extrabold, sans-serif;
+          font-weight: 400;
+          letter-spacing: 0.88px;
+        }
+      }
+    }
+
+    .action {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 44px;
+      margin-bottom: 180px;
+      .sm-block({
+        margin-top: 0;
+        margin-bottom: 35px;
+      });
+      .btn {
+        width: 145px;
+        height: 50px;
+        background-color: #fff;
+        color: @btn-text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
+        border-radius: 6px;
+
+        font-family: @font-family-bold;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 0.85px;
+
+        &--gradient {
+          color: @gr-bnt-text-color;
+          width: 167px;
+          height: 50px;
+          box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
+          border-radius: 6px;
+          background-image: linear-gradient(-225deg, #ff8e64 0%, #ffe641 100%);
+          margin-right: 20px;
+
+          font-family: @font-family-bold;
+          font-size: 17px;
+          font-weight: 700;
+          letter-spacing: 0.85px;
+        }
+      }
+    }
+
+    .tablet-content {
+      text-align: center;
+      img {
+        margin-bottom: -128px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,98 @@
+#features {
+  div.title-container {
+    text-align: center;
+    h1 {
+      color: @features-title-color;
+      font-family: @font-family-ligth, sans-serif;
+      font-size: 35px;
+      font-weight: 300;
+      letter-spacing: 0.88px;
+      span {
+        font-family: @font-family-extrabold, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.88px;
+      }
+    }
+  }
+  div.feature-items {
+    .row-flex();
+    justify-content: center;
+
+    article.feature-item {
+      .col();
+      .size(4);
+      .size-sm(12);
+      .sm-block({
+        margin-top: 45px;
+      });
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 62px 48px 70px 48px;
+      margin-top: 78px;
+      box-shadow: 0 1px 3px rgba(32, 33, 39, 0.12);
+      border-radius: 12px;
+      background-color: @features-bg-item-color;
+
+      div.icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        margin-bottom: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: @features-icon-fill-color;
+      }
+
+      div.sync {
+        box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
+        background-image: linear-gradient(-225deg, #7956ec 0%, #2fb9f8 100%);
+      }
+      div.mail {
+        box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
+        background-image: linear-gradient(-225deg, #ff8e64 0%, #ffe641 100%);
+      }
+      div.notify {
+        box-shadow: 0 6px 12px rgba(40, 43, 49, 0.08);
+        background-image: linear-gradient(-225deg, #ad2ab9 0%, #ff618c 100%);
+      }
+
+      h3 {
+        color: @features-title-color;
+        font-family: @font-family-ligth, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align: center;
+        span {
+          font-family: @font-family-extrabold, sans-serif;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        color: @features-text-color;
+        font-family: @font-family-regular, sans-serif;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        margin-bottom: 26px;
+        text-align: center;
+      }
+
+      a {
+        color: @features-link-color;
+        font-family: @font-family-regular, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: underline;
+
+        &:hover {
+          color: @features-link-hover-state;
+          .transition();
+        }
+      }
+    }
+  }
+}

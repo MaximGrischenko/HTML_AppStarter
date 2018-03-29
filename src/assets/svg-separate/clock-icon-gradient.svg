@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="27"
+     viewBox="0 0 26 27">
+    <defs>
+        <path id="6zwba"
+              d="M177 2358.99a12 12 0 1 1 0-24 12 12 0 0 1 0 24zm0-21a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm6 10.5h-6a1.5 1.5 0 0 1-1.5-1.49v-6.03a1.5 1.5 0 0 1 3 0v4.52h4.5a1.5 1.5 0 0 1 0 3z"/>
+    </defs>
+    <g>
+        <g transform="translate(-164 -2333)">
+            <use fill="url(#6zwbb)" xlink:href="#6zwba"/>
+        </g>
+    </g>
+</svg>
